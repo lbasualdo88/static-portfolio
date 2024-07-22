@@ -35,7 +35,7 @@ export default function Readmi() {
               <img
                 key={index}
                 className="icon-style" 
-                src={`/public/${icono.icon_path}`} 
+                src={`/${icono.icon_path}`} 
                 alt={icono.name}
               />
             ))}
