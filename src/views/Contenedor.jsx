@@ -26,10 +26,10 @@ export default function Contenedor() {
             <UltimosProyectos direction="right" speed={60000} proyectos={shuffledArray2}/>
             <UltimosProyectos direction="left" speed={10000} proyectos={shuffledArray3}/>
 
-            <a
+            <Link
             className="flex justify-center items-center font-Raleway py-4 rounded-xl text-4xl border-2 border-solid border-color7 text-color7 md:w-60 w-auto hover:pointer m-auto hover:text-color1 hover:bg-color7" 
-            href="/proyectos"
-        >Ver mas</a>
+            to="/proyectos"
+        >Ver mas</Link>
         </section>
     </>
   )
