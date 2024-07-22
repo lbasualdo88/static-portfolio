@@ -36,7 +36,7 @@ export default function Proyectos() {
       <Busqueda 
         onBuscar={handleBuscar}
       />
-            <h1 className="text-5xl uppercase font-krub font-bold text-center pt-4 text-color8">Proyectos</h1>
+            <h1 className="text-5xl uppercase font-krub font-bold text-center pt-4 text-color8 py-8 md:pb-0 md:my-4">Proyectos</h1>
             {proyectos.filter(filtrarProyectos).map((proyecto, index) => (
                 <Proyecto
                 key={index}

@@ -1,5 +1,10 @@
 import { createContext, useState, useEffect } from 'react';
-import clienteAxios from '../config/axios';
+import apiIconProject from '../api/api-icon-project';
+import apiIcon from '../api/api-icon';
+import apiImagen from '../api/api-imagen';
+import apiImageProject from '../api/api-image-project';
+import apiProject from '../api/api-project';
+
 
 const PortfolioContext = createContext();
 
@@ -11,55 +16,58 @@ const PortfolioProvider = ({ children }) => {
   const [imagenesProyecto, setImagenesProyecto] = useState([]);
   const [proyectosConDatos, setProyectosConDatos] = useState([]);
 
-  const obtenerIconos = async () => {
+  const obtenerIconos = () => {
     try {
-      const { data } = await clienteAxios('/api/icon');
-      setIconos(data.data);
+      const data = apiIcon;
+      setIconos(data);
+      
     } catch (error) {
-      console.log(error);
+      console.error(error);
+    }
+  };
+  
+  const obtenerImagenes = () => {
+    try {
+      const data = apiImagen;
+      setImagenes(data);
+      
+    } catch (error) {
+      console.error(error);
+    }
+  };
+  
+  const obtenerIconosProyecto = () => {
+    try {
+      const data = apiIconProject;
+      setIconosProyecto(data);
+      
+    } catch (error) {
+      console.error(error);
+    }
+  };
+  
+  const obtenerImagenesProyecto = () => {
+    try {
+      const data = apiImageProject;
+      setImagenesProyecto(data);
+      
+    } catch (error) {
+      console.error(error);
+    }
+  };
+  
+  const obtenerProyectos = () => {
+    try {
+      const data = apiProject;
+      setProyectos(data);
+      
+    } catch (error) {
       console.error(error);
     }
   };
 
-  const obtenerImagenes = async () => {
-    try {
-      const { data } = await clienteAxios('/api/imagen');
-      setImagenes(data.data);
-    } catch (error) {
-      //console.log(error);
-    }
-  };
 
-  const obtenerIconosProyecto = async () => {
-    try {
-      const { data } = await clienteAxios('/api/icon-project');
-      setIconosProyecto(data.data);
-    } catch (error) {
-      //console.log(error);
-      
-    }
-  };
-
-  const obtenerImagenesProyecto = async () => {
-    try {
-      const { data } = await clienteAxios('/api/image-project');
-      setImagenesProyecto(data.data);
-    } catch (error) {
-      //console.log(error);
-    }
-  };
-
-  const obtenerProyectos = async () => {
-    try {
-      const { data } = await clienteAxios('/api/project');
-      setProyectos(data.data);
-    } catch (error) {
-      //console.log(error);
-    }
-  };
-
-
-  console.log(import.meta.env.VITE_API_URL);
+ 
  
   useEffect(() => {
     obtenerIconos();

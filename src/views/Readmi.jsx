@@ -10,15 +10,14 @@ export default function Readmi() {
 
   // Encontrar el proyecto por ID
   const proyecto = proyectos.find(proyecto => proyecto.id === parseInt(id));
-  console.log(proyecto);
+  
   // Preparar las imágenes para react-image-gallery
   const images = proyecto.imagenes.map(imagen => ({
     original: `/public/${imagen.image_path}`,
     thumbnail: `/public/${imagen.image_path}`,
     description: imagen.description  // Opcional: agregar descripción si existe
   }));
-  console.log(proyecto.imagenes);
-  console.log(images);
+  
   
 
   return (
@@ -26,9 +25,9 @@ export default function Readmi() {
       <section className="contenedor shadow-custom p-8 rounded-lg max-w-4xl m-auto mt-10 md:mt-28 flex flex-col items-center gap-8">
         <div className="w-full">
           <div className='flex flex-col'>
-            <h2 className="text-center font-bold uppercase text-4xl text-color8">{proyecto.title}</h2>
-            <span className="text-center text-3xl text-color8 justify-center">{proyecto.categoria}</span>  
-            <span className="text-center text-2xl text-color5 justify-center">{proyecto.tipo}</span>  
+            <h2 className="text-center font-bold uppercase text-4xl text-color8 py-4 md:py-2">{proyecto.title}</h2>
+            <span className="text-center text-3xl text-color8 justify-center py-2">{proyecto.categoria}</span>  
+            <span className="text-center text-2xl text-color5 justify-center py-2">{proyecto.tipo}</span>  
             <p className="p-8" dangerouslySetInnerHTML={{ __html: proyecto.description }}></p>
           </div>
           <div className="icon-container">

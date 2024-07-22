@@ -1,11 +1,7 @@
-import usePortafolio from "../hooks/usePortafolio"
-import { motion } from "framer-motion";
-import Carousel from "../components/Carrusel"
-import Skill from "./Skill"
 
 export default function SobreMi() {
     
-    const { iconos } = usePortafolio()
+
    
   return (
     <>
@@ -23,7 +19,7 @@ export default function SobreMi() {
                                     los conocimientos necesarios para alcanzar mi objetivo. <br />
                                     En estos momentos me encuentro estudiando en la UTN la Tecnicatura Universitaria en Tecnologías de la Información.  
                                    <br />  
-                                    Mis habilidades incluyen JavaScript, HTML, CSS, Java, MySQL, PHP, Laravel y React. 
+                                    Mis habilidades incluyen JavaScript, HTML, CSS, SASS, MySQL, PHP, Laravel y React. 
                                    <br />  
                                     Disfruto del diseño y la creación de interfaces de usuario atractivas y funcionales que mejoren la experiencia del usuario. 
                                    <br />

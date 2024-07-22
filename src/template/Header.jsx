@@ -63,25 +63,25 @@ export default function Header() {
           </button>
           <nav className="nav hidden md:flex md:flex-row items-center gap-4 p-4">
             <a
-              className="scroll hover:bg-color9 hover:rounded-3xl p-4 text-color8 no-underline text-3xl"
+              className="scroll hover:bg-color9 hover:rounded-xl p-4 text-color8 no-underline text-3xl"
               href="#contenedor"
             >
               Proyectos
             </a>
             <a
-              className="scroll hover:bg-color9 hover:rounded-3xl p-4 text-color8 no-underline text-3xl"
+              className="scroll hover:bg-color9 hover:rounded-xl p-4 text-color8 no-underline text-3xl"
               href="#sobremi"
             >
               Sobre Mi
             </a>
             <a
-              className="scroll hover:bg-color9 hover:rounded-3xl p-4 text-color8 no-underline text-3xl"
+              className="scroll hover:bg-color9 hover:rounded-xl p-4 text-color8 no-underline text-3xl"
               href="#educacion"
             >
               Educación
             </a>
             <a
-              className="scroll hover:bg-color9 hover:rounded-3xl p-4 text-color8 no-underline text-3xl"
+              className="scroll hover:bg-color9 hover:rounded-xl p-4 text-color8 no-underline text-3xl"
               href="#skill"
             >
               Skill

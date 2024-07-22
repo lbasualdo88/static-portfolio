@@ -16,10 +16,10 @@ export default function Proyecto({proyecto}) {
                       />
                 </div>
                 <div className="w-full flex flex-col">
-                    <h2 className="text-center font-bold uppercase text-4xl text-color8">{proyecto.title}</h2>
-                    <span className="text-center text-3xl text-color8 justify-center">{proyecto.categoria}</span>  
-                    <span className="text-center text-2xl text-color5 justify-center">{proyecto.tipo}</span>  
-                    <div className="md:icon-container flex flex-wrap justify-center gap-1">
+                    <h2 className="text-center font-bold uppercase text-4xl text-color8 py-4">{proyecto.title}</h2>
+                    <span className="text-center text-3xl text-color8 justify-center py-2">{proyecto.categoria}</span>  
+                    <span className="text-center text-2xl text-color5 justify-center py-2">{proyecto.tipo}</span>  
+                    <div className="md:icon-container flex flex-wrap justify-center gap-1 py-2">
                   {proyecto.iconos.map((icono,index)=>{
                    
                     return (

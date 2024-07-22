@@ -1,4 +1,4 @@
-import { createRef, useState } from "react"
+import { createRef } from "react"
 
 export default function Busqueda({ onBuscar }) {
 
