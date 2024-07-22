@@ -10,7 +10,7 @@ export default function HeaderProyectos() {
               <a className='flex items-center cursor-pointer' href="/">
                 <img
                     className='w-10 h-10 mr-4'
-                    src="/public/img//iconos/estrellas.png"
+                    src="/img//iconos/estrellas.png"
                     alt="logo"
                 />
                 <h3 className="text-4xl font-Raleway">Leonardo Javier Basualdo</h3>

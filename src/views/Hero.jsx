@@ -19,21 +19,21 @@ export default function Hero() {
                       <a className="text-2xl md:text-3xl" href="https://github.com/lbasualdo88">Github </a>
                         <img 
                           className="w-12 h-auto" 
-                          src="/public/img/iconos/github.png"
+                          src="/img/iconos/github.png"
                         /> 
                     </li>
                     <li className="flex flex-row-reverse items-center gap-1">
                       <a className="text-2xl md:text-3xl" href="https://www.linkedin.com/in/leonardo-javier-basualdo-/">Linkedin</a> 
                         <img 
                           className="w-12 h-auto" 
-                          src="/public/img/iconos/linkedin.png"
+                          src="/img/iconos/linkedin.png"
                         />
                     </li>
                     <li className="flex flex-row-reverse items-center gap-1">
                       <a className="text-2xl md:text-3xl" href="mailto:lbasualdo88@gmail.com">Email</a> 
                         <img 
                           className="w-12 h-auto" 
-                          src="/public/img/iconos/gmail.svg"
+                          src="/img/iconos/gmail.svg"
                         />
                     </li>
                     <li className="flex flex-row-reverse items-center gap-1">
