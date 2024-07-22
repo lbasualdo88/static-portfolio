@@ -30,7 +30,7 @@ export default function Hero() {
                         />
                     </li>
                     <li className="flex flex-row-reverse items-center gap-1">
-                      <a className="text-2xl md:text-3xl" href="mailto:lbasualdo88@gmail.com">Email</a> 
+                      <a className="text-2xl md:text-3xl" href="mailto:lbasualdo88@gmail.com">Gmail</a> 
                         <img 
                           className="w-12 h-auto" 
                           src="/img/iconos/gmail.svg"
