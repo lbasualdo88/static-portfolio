@@ -37,7 +37,7 @@ export default function Hero() {
                         />
                     </li>
                     <li className="flex flex-row-reverse items-center gap-1">
-                      <a className="text-2xl md:text-3xl" href="/Doc/Leonardo Basualdo CV_240415_091705 (1).pdf" download="">Currículum</a> 
+                      <a className="text-2xl md:text-3xl" href="/Doc/CV-Leonardo Javier Basualdo.pdf" download="CV-Leonardo Javier Basualdo.pdf">Currículum</a> 
                       <FaFilePdf 
                         className="w-10 h-auto text-red-600" 
                       />
