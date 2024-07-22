@@ -2,8 +2,9 @@ import { useEffect } from 'react';
 
 
 
-export default function Header() {
 
+export default function Header() {
+  
 
   
 
@@ -61,6 +62,7 @@ export default function Header() {
               alt="icono menu"
             />
           </button>
+         
           <nav className="nav hidden md:flex md:flex-row items-center gap-4 p-4">
             <a
               className="scroll hover:bg-color9 hover:rounded-xl p-4 text-color8 no-underline text-3xl"

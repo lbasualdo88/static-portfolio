@@ -17,11 +17,17 @@ export default function HeaderProyectos() {
               </a>
             </div>
 
-            <button className='hover:bg-color9 hover:rounded-3xl p-4 text-color8 no-underline text-3xl mr-8'>
-                <Link to={location.pathname === `/proyecto/readmi/${id}` ? '/proyectos' : '/'}>
-                    Volver
-                </Link>
-            </button>
+            {location.pathname === `/proyecto/readmi/${id}` ? (
+                 <button className='hover:bg-color9 hover:rounded-3xl p-4 text-color8 no-underline text-3xl mr-8'>
+                 <Link to='/proyectos'>
+                     Volver
+                 </Link>
+             </button>
+            ) : (
+                ''
+            )}
+
+           
         </div>
     );
 }
