@@ -1,14 +1,9 @@
 import { useEffect } from 'react';
 
 
-
-
 export default function Header() {
-  
-
-  
-
   useEffect(() => {
+
     function scrollNav() {
       const enlaceSobreMi = document.querySelectorAll('.scroll');
       enlaceSobreMi.forEach(element => {
@@ -41,57 +36,58 @@ export default function Header() {
     }
   }
 
-
   return (
     <div className="header flex md:flex-row justify-between items-center p-4">
       <div className=''>
-      <a className='flex items-center cursor-pointer' href="/">
-                <img
-                    className='w-10 h-10 mr-4'
-                    src="/img/iconos/estrellas.png"
-                    alt="logo"
-                />
-                <h3 className="text-4xl font-Raleway">Leonardo Javier Basualdo</h3>
+        <a className='flex items-center cursor-pointer' href="/">
+          <img
+            className='w-10 h-10 mr-4'
+            src="/img/iconos/estrellas.png"
+            alt="logo"
+          />
+          <h3 className="text-4xl font-Raleway">Leonardo Javier Basualdo</h3>
         </a>
       </div>
-        
-          <button onClick={handleClick} className='md:hidden'>
-            <img 
-              className='md:hidden w-16 p-auto mr-3 cursor-pointer'
-              src="/img/iconos/menu-01-stroke-rounded.svg" 
-              alt="icono menu"
-            />
-          </button>
-         
-          <nav className="nav hidden md:flex md:flex-row items-center gap-4 p-4">
-            <a
-              className="scroll hover:bg-color9 hover:rounded-xl p-4 text-color8 no-underline text-3xl"
-              href="#contenedor"
-            >
-              Proyectos
-            </a>
-            <a
-              className="scroll hover:bg-color9 hover:rounded-xl p-4 text-color8 no-underline text-3xl"
-              href="#sobremi"
-            >
-              Sobre Mi
-            </a>
-            <a
-              className="scroll hover:bg-color9 hover:rounded-xl p-4 text-color8 no-underline text-3xl"
-              href="#educacion"
-            >
-              Educación
-            </a>
-            <a
-              className="scroll hover:bg-color9 hover:rounded-xl p-4 text-color8 no-underline text-3xl"
-              href="#skill"
-            >
-              Skill
-            </a>
-           
-          </nav>
-        
       
+      <button onClick={handleClick} className='md:hidden'>
+        <img 
+          className='md:hidden w-16 p-auto mr-3 cursor-pointer'
+          src="/img/iconos/menu-01-stroke-rounded.svg" 
+          alt="icono menu"
+        />
+      </button>
+        
+        <nav className="nav hidden md:flex md:flex-row items-center gap-4 p-4">
+          <a
+            className="scroll hover:bg-color9 hover:rounded-xl p-4 text-color8 no-underline text-3xl"
+            href="#contenedor"
+          >
+            Proyectos
+          </a>
+          <a
+            className="scroll hover:bg-color9 hover:rounded-xl p-4 text-color8 no-underline text-3xl"
+            href="#sobremi"
+          >
+            Sobre Mi
+          </a>
+          <a
+            className="scroll hover:bg-color9 hover:rounded-xl p-4 text-color8 no-underline text-3xl"
+            href="#educacion"
+          >
+            Educación
+          </a>
+          <a
+            className="scroll hover:bg-color9 hover:rounded-xl p-4 text-color8 no-underline text-3xl"
+            href="#skill"
+          >
+            Skill
+          </a>
+        </nav>
+      
+
+    
+        
+     
     </div>
   );
 }
